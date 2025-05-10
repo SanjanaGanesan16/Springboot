@@ -12,6 +12,10 @@ public class RecordsService {
 	public List<Students> getRecords(){
 		return recordsdao.findAll();
 	}
+
+	public void insertToStudents(Students student) {
+		this.recordsdao.insertToStudents(student);
+	}
 	
 
 }
